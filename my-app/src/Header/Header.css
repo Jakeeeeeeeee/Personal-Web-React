@@ -1,0 +1,14 @@
+.header{
+    height: 80px;
+    width: 992px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .header_left {
+    font-size: 20px;
+    flex: 50%;
+    font-size: 30px;
+    margin-top: 25px;
+  }
