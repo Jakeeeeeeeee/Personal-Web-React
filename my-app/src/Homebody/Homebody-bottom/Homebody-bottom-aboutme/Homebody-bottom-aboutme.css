@@ -1,0 +1,10 @@
+.home_body_bottom_aboutme {
+  word-break: keep-all;
+  width: 350px;
+  flex: 50%;
+  margin-left: 20px;
+}
+
+.home_body_bottom_title {
+  font-size: 25px;
+}

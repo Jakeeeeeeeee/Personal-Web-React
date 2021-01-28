@@ -1,0 +1,12 @@
+.home_body_top {
+  display: flex;
+  justify-content: center;
+  background-color: #008f4c  ;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+  height: 320px;
+  box-sizing: border-box;
+}
+
+
+

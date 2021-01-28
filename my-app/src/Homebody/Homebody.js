@@ -1,17 +1,12 @@
 import Homebodytop from "./Homebody-top/Homebody-top";
 import Homebodybottom from "./Homebody-bottom/Homebody-bottom";
+import "./Homebody.css";
 
- const Homebody = () => (
-    
-        <div>
-        <div class="home_body_top">
-          <Homebodytop />
-        </div>
-
-        <div class="home_body_bottom">
-          <Homebodybottom />
-        </div>
-        </div>
-        );
+const Homebody = () => (
+  <div id="home_body">
+    <Homebodytop />
+    <Homebodybottom />
+  </div>
+);
 
 export default Homebody;

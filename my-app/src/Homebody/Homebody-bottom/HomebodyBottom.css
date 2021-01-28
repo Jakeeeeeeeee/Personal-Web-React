@@ -1,0 +1,20 @@
+.home_body_bottom {
+  display: flex;
+  justify-content: center;
+  margin:20px;
+  flex-wrap: wrap;
+  
+  
+}
+
+.home_body_bottom > div {
+  background-color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+
+
+
+
