@@ -1,0 +1,21 @@
+.home_body_top_right {
+  text-align: center;
+  color: white;
+  margin: 70px 0 0 0;
+  flex: 70%;
+}
+
+.author_name{
+  margin-bottom: 20px;
+}
+
+.icon {
+  border-radius: 50%;
+  background-color: white;
+  padding: 8px;
+  margin: 5px;
+}
+
+.icon:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}

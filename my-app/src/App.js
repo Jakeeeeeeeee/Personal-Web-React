@@ -1,17 +1,16 @@
 import "./App.css";
 import Header from "./Header/Header";
 import Homebody from "./Homebody/Homebody";
+import ResumePage from "./ResumePage/ResumePage";
 
 function App() {
   return (
-    <div className="App">
-      <div className="header">
+    <div className="app">
         <Header />
-      </div>
-
-      <div id="home_body">
+    <div className="main">
         <Homebody />
-      </div>
+        <ResumePage />
+    </div>
     </div>
   );
 }
