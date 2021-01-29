@@ -1,15 +1,16 @@
+import Page from "../Page/Page";
 import ResumeInfo from "./ResumeInfo/ResumeInfo";
 import "./ResumePage.css";
-import ResumeTitle from "./ResumeTitle/ResumeTitle";
+
 
 
 const ResumePage = () => (
-    <div id="resume_body">
-        <ResumeTitle />
 
+  <Page title="Resume" active>
+    
         <ResumeInfo />
    
-  </div>
+  </Page>
 );
 
 
