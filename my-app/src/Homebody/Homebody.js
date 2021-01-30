@@ -1,12 +1,12 @@
 import Homebodytop from "./Homebody-top/Homebody-top";
 import Homebodybottom from "./Homebody-bottom/Homebody-bottom";
 import "./Homebody.css";
+import Page from "../Page/Page";
 
-const Homebody = () => (
-  <div id="home_body">
-    <Homebodytop />
+const Homebody = ({ active }) => (
+  <Page active={active} header={(<Homebodytop />)}>
     <Homebodybottom />
-  </div>
+  </Page>
 );
 
 export default Homebody;

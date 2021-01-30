@@ -1,5 +1,11 @@
 .main {
     margin: 10% 10px 50px 10px ;
     position: absolute;
-    width: 992px;
+    width: 990px;
+
+    border:  rgba(0, 0, 0, 0.2) 1px solid;
+    border-radius: 15px;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px 4px  rgba(0, 0, 0, 0.2);
+    background-color: white;
   }

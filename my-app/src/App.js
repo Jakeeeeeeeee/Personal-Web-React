@@ -13,10 +13,10 @@ function App() {
         <Header />
     <div className="main">
         <Homebody />
-        <ResumePage />
+        <ResumePage  />
         <ServicePage />
         <ProjectPage />
-        <ContactPage />
+        <ContactPage active />
     </div>
     </div>
   );
