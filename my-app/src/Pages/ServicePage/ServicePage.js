@@ -1,17 +1,17 @@
 import "./ServicePage.css";
 import ServiceInfoTitle from "./ServiceInfoTitle/ServiceInfoTitle";
 import ServiceInfoBody from "./ServiceInfoBody/ServiceInfoBody";
-import Page from "../Page/Page";
+import PageProps from "../PageProps/PageProps";
 import PageTitle from "../PageTitle/PageTitle";
 
 const ServicePage = ({active,}) => (
-  <Page  
+  <PageProps  
     active={active}
     header={(<PageTitle>Services</PageTitle>)}
   >
     <ServiceInfoTitle />
     <ServiceInfoBody />
-  </Page>
+  </PageProps>
 );
 
 export default ServicePage;

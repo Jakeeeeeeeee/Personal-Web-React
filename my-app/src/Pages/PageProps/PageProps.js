@@ -1,6 +1,6 @@
-import "./Page.css";
+import "./PageProps.css";
 
-const Page = ({ 
+const PageProps = ({ 
   active, children, header,
  }) => {
 
@@ -30,4 +30,4 @@ const Page = ({
 // );
 
 
-export default Page;
+export default PageProps;

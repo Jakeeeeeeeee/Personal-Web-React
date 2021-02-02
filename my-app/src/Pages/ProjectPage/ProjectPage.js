@@ -1,12 +1,12 @@
-import Page from "../Page/Page";
+import PageProps from "../PageProps/PageProps";
 import "./ProjectPage.css";
 import PageTitle from "../PageTitle/PageTitle";
 
 const ProjectPage = ({active,}) => (
-    <Page  active={active}
+    <PageProps  active={active}
             header={(<PageTitle>Project</PageTitle>)}>
       
-    </Page>
+    </PageProps>
 );
 
 
