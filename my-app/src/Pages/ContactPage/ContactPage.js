@@ -1,13 +1,13 @@
-import Page from "../Page/Page";
+import PageProps from "../PageProps/PageProps";
 import ContactInfo from "./ContactInfo/ContactInfo";
 import "./Contactpage.css";
 import PageTitle from "../PageTitle/PageTitle";
 
 const ContactPage = ({active,}) => (
-  <Page  active={active}
+  <PageProps  active={active}
         header={(<PageTitle>Contact</PageTitle>)}>
     <ContactInfo />
-  </Page>
+  </PageProps>
 );
 
 export default ContactPage;

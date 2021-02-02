@@ -1,4 +1,4 @@
-import Page from "../Page/Page";
+import PageProps from "../PageProps/PageProps";
 import ResumeInfo from "./ResumeInfo/ResumeInfo";
 import "./ResumePage.css";
 import PageTitle from "../PageTitle/PageTitle";
@@ -7,12 +7,12 @@ import PageTitle from "../PageTitle/PageTitle";
 
 const ResumePage = ({active,}) => (
 
-  <Page  active={active}
+  <PageProps  active={active}
          header={(<PageTitle>Resume</PageTitle>)}>
     
         <ResumeInfo />
    
-  </Page>
+  </PageProps>
 );
 
 

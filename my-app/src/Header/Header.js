@@ -11,7 +11,7 @@ const Header = () => (
       </div>
 
       <div className="header_right">
-        <Nav />
+        <Nav active/>
       </div>
       </div>
   );
