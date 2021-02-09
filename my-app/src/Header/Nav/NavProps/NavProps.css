@@ -7,20 +7,13 @@
   position: relative;
 }
 
-.navItems--active li {
-  float: left;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  padding: 14px 16px;
-  position: relative;
-}
+
 
 .navItems--active li::after
 {
   content: "";
   display: block;
-  border-bottom: 5px solid green;
+  border-bottom: 3px solid green;
   position: absolute;
   width: 20px;
   left: 37%;

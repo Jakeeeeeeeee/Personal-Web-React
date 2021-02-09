@@ -3,7 +3,7 @@ import './Header.css'
 import Nav from './Nav/Nav';
 
 
-const Header = () => (
+const Header = ({currentPage,changePage}) => (
     
     <div className="header">
       <div className="header_left">
@@ -11,7 +11,7 @@ const Header = () => (
       </div>
 
       <div className="header_right">
-        <Nav active/>
+        <Nav currentPage={currentPage} changePage={changePage}/>
       </div>
       </div>
   );
