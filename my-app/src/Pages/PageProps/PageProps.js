@@ -7,7 +7,7 @@ const PageProps = ({
   let className = 'mainpage';
 
   if (active) {
-    className += 'mainpage--active'
+    className = 'mainpage--active'
   }
   
    return (
