@@ -1,21 +1,82 @@
 import "./Nav.css";
 import "./NavProps/NavProps";
 import NavProps from "./NavProps/NavProps";
-import PAGE from '../../constants/constants';
+import PAGE from "../../constants/constants";
 
+const ITEMS = [
+  {
+    key: PAGE.HOME,
+    text: "Home",
+  },
+  {
+    key: PAGE.RESUME,
+    text: "Resume",
+  },
+  {
+    key: PAGE.SERVICES,
+    text: "Services",
+  },
+  {
+    key: PAGE.PROJECT,
+    text: "Project",
+  },
+  {
+    key: PAGE.CONTACT,
+    text: "Contact",
+  },
+];
 
-const Nav = ({currentPage, changePage}) => (
-    <div >
-        <NavProps  active={currentPage === PAGE.HOME} pageName={PAGE.HOME} changePage={changePage}>Home</NavProps>
-        <NavProps  active={currentPage === PAGE.RESUME} pageName={PAGE.RESUME} changePage={changePage}>Resume</NavProps>
-        <NavProps  active={currentPage === PAGE.SERVICES} pageName={PAGE.SERVICES} changePage={changePage}>Services</NavProps>
-        <NavProps  active={currentPage === PAGE.PROJECT} pageName={PAGE.PROJECT} changePage={changePage}>Project</NavProps>
-        <NavProps  active={currentPage === PAGE.CONTACT} pageName={PAGE.CONTACT} changePage={changePage}>Contact</NavProps>
-    
-        {/* <li href="javascript:void(0);" class="nav_icon" onclick="myFunction()">
+const Nav = ({ currentPage, changePage }) => (
+  <div>
+    {ITEMS.map((item) => (
+      <NavProps
+        key={item.key}
+        active={(currentPage === item.key)}
+        clicked={() => changePage(item.key)}
+      >
+        {item.text}
+      </NavProps>
+    ))}
+
+    {/* <NavProps
+      active={currentPage === PAGE.HOME}
+      clicked={() => changePage(PAGE.HOME)}
+    >
+      Home
+    </NavProps>
+
+    <NavProps
+      active={currentPage === PAGE.RESUME}
+      clicked={() => changePage(PAGE.RESUME)}
+    >
+      Resume
+    </NavProps>
+
+    <NavProps
+      active={currentPage === PAGE.SERVICES}
+      clicked={() => changePage(PAGE.SERVICES)}
+    >
+      Services
+    </NavProps>
+
+    <NavProps
+      active={currentPage === PAGE.PROJECT}
+      clicked={() => changePage(PAGE.PROJECT)}
+    >
+      Project
+    </NavProps>
+
+    <NavProps
+      active={currentPage === PAGE.CONTACT}
+      clicked={() => changePage(PAGE.CONTACT)}
+    >
+      Contact
+    </NavProps> */}
+
+    {/* <li href="javascript:void(0);" class="nav_icon" clicked="myFunction()">
         <i class="fa fa-bars"></i>
         </li> */}
-      </div>
+  </div>
 );
 
 export default Nav;
