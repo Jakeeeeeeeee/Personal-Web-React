@@ -1,23 +1,25 @@
 import "./NavProps.css";
 
-const NavProps = ({active, children, pageName, changePage}) => {
+const NavProps = ({active, children, clicked,}) => {
     let className = 'navItems';
 
     if (active) {
         className += ' navItems--active'
     }
 
-    const cliked = (event) => {
-        event.preventDefault();
+    // const cliked = (event) => {
+    //     event.preventDefault();
 
-        console.log('CLICKED', pageName);
-        changePage(pageName);
-    };
+    //     changePage(pageName);
+    // };
 
 
     return (
         <ul  className = {className}>
-        <li onClick={cliked} >{children}</li>
+        <li onClick={(event) => {
+            event.preventDefault();
+            clicked();
+        }} >{children}</li>
         </ul>
     );
 
